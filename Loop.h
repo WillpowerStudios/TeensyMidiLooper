@@ -49,7 +49,7 @@ class Loop
         
         if (m_last_note_played == m_events.size() - 1)
         {
-          m_playing = false;
+          startPlayback();
         }
       }
     }
