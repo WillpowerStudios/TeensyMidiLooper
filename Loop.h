@@ -7,6 +7,10 @@ class Loop
   //-------------------------------------------------------------------------------
   void addEvent(NoteEvent event)
   {
+    if (m_playing) { 
+      return; // get out 
+    }
+    
     if (m_events.size() == 0)
     {
       m_time_record = event.m_time;
